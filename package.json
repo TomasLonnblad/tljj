@@ -41,7 +41,8 @@
     "blurhash": "2.0.5",
     "lodash.debounce": "4.0.8",
     "react-merge-refs": "2.1.1",
-    "thumbhash": "0.1.1"
+    "thumbhash": "0.1.1",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@splinetool/runtime": "^1.10.57",
