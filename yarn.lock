@@ -22,7 +22,7 @@
 "@babel/compat-data@^7.24.6":
   version "7.24.6"
 
-"@babel/core@^7.24.5":
+"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.24.5":
   version "7.24.6"
   dependencies:
     "@ampproject/remapping" "^2.2.0"
@@ -189,12 +189,6 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@esbuild/win32-x64@0.20.2":
-  version "0.20.2"
-
-"@img/sharp-win32-x64@0.33.4":
-  version "0.33.4"
-
 "@inquirer/figures@^1.0.2":
   version "1.0.2"
 
@@ -262,9 +256,6 @@
 "@next/env@15.0.0-rc.0":
   version "15.0.0-rc.0"
 
-"@next/swc-win32-x64-msvc@15.0.0-rc.0":
-  version "15.0.0-rc.0"
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   dependencies:
@@ -297,9 +288,6 @@
     "@pnpm/config.env-replace" "^1.1.0"
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
-
-"@rollup/rollup-win32-x64-msvc@4.18.0":
-  version "4.18.0"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
@@ -355,8 +343,10 @@
   dependencies:
     "@babel/types" "^7.20.7"
 
-"@types/estree@1.0.5":
-  version "1.0.5"
+"@types/estree@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.8.tgz"
+  integrity sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==
 
 "@types/http-cache-semantics@^4.0.2":
   version "4.0.4"
@@ -369,7 +359,7 @@
 "@types/lodash@*":
   version "4.14.191"
 
-"@types/node@^20.14.1":
+"@types/node@^18.0.0 || >=20.0.0", "@types/node@^20.14.1":
   version "20.14.1"
   dependencies:
     undici-types "~5.26.4"
@@ -521,7 +511,7 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browserslist@^4.22.2:
+browserslist@^4.22.2, "browserslist@>= 4.21.0":
   version "4.23.0"
   dependencies:
     caniuse-lite "^1.0.30001587"
@@ -1427,7 +1417,7 @@ listr-verbose-renderer@^0.5.0:
     date-fns "^1.27.2"
     figures "^2.0.0"
 
-listr@^0.14.3:
+listr@^0.14.2, listr@^0.14.3:
   version "0.14.3"
   dependencies:
     "@samverschueren/stream-to-observable" "^0.3.0"
@@ -1885,7 +1875,7 @@ react-merge-refs@2.1.1:
 react-refresh@^0.14.2:
   version "0.14.2"
 
-react@19.0.0-rc-f994737d14-20240522:
+"react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0", react@19.0.0-rc-f994737d14-20240522:
   version "19.0.0-rc-f994737d14-20240522"
 
 read-package-up@^11.0.0:
@@ -1976,27 +1966,41 @@ rollup-preserve-directives@^1.1.1:
   dependencies:
     magic-string "^0.30.5"
 
-rollup@^4.13.0:
-  version "4.18.0"
-  dependencies:
-    "@types/estree" "1.0.5"
+"rollup@^2.0.0 || ^3.0.0 || ^4.0.0", rollup@^2.28.2:
+  version "2.79.2"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-2.79.2.tgz"
+  integrity sha512-fS6iqSPZDs3dr/y7Od6y5nha8dW1YnbgtsyotCVvoFGKbERG++CVRFv1meyGDE1SNItQA8BrnCw7ScdAhRJ3XQ==
   optionalDependencies:
-    "@rollup/rollup-android-arm-eabi" "4.18.0"
-    "@rollup/rollup-android-arm64" "4.18.0"
-    "@rollup/rollup-darwin-arm64" "4.18.0"
-    "@rollup/rollup-darwin-x64" "4.18.0"
-    "@rollup/rollup-linux-arm-gnueabihf" "4.18.0"
-    "@rollup/rollup-linux-arm-musleabihf" "4.18.0"
-    "@rollup/rollup-linux-arm64-gnu" "4.18.0"
-    "@rollup/rollup-linux-arm64-musl" "4.18.0"
-    "@rollup/rollup-linux-powerpc64le-gnu" "4.18.0"
-    "@rollup/rollup-linux-riscv64-gnu" "4.18.0"
-    "@rollup/rollup-linux-s390x-gnu" "4.18.0"
-    "@rollup/rollup-linux-x64-gnu" "4.18.0"
-    "@rollup/rollup-linux-x64-musl" "4.18.0"
-    "@rollup/rollup-win32-arm64-msvc" "4.18.0"
-    "@rollup/rollup-win32-ia32-msvc" "4.18.0"
-    "@rollup/rollup-win32-x64-msvc" "4.18.0"
+    fsevents "~2.3.2"
+
+rollup@^4.13.0:
+  version "4.50.2"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-4.50.2.tgz"
+  integrity sha512-BgLRGy7tNS9H66aIMASq1qSYbAAJV6Z6WR4QYTvj5FgF15rZ/ympT1uixHXwzbZUBDbkvqUI1KR0fH1FhMaQ9w==
+  dependencies:
+    "@types/estree" "1.0.8"
+  optionalDependencies:
+    "@rollup/rollup-android-arm-eabi" "4.50.2"
+    "@rollup/rollup-android-arm64" "4.50.2"
+    "@rollup/rollup-darwin-arm64" "4.50.2"
+    "@rollup/rollup-darwin-x64" "4.50.2"
+    "@rollup/rollup-freebsd-arm64" "4.50.2"
+    "@rollup/rollup-freebsd-x64" "4.50.2"
+    "@rollup/rollup-linux-arm-gnueabihf" "4.50.2"
+    "@rollup/rollup-linux-arm-musleabihf" "4.50.2"
+    "@rollup/rollup-linux-arm64-gnu" "4.50.2"
+    "@rollup/rollup-linux-arm64-musl" "4.50.2"
+    "@rollup/rollup-linux-loong64-gnu" "4.50.2"
+    "@rollup/rollup-linux-ppc64-gnu" "4.50.2"
+    "@rollup/rollup-linux-riscv64-gnu" "4.50.2"
+    "@rollup/rollup-linux-riscv64-musl" "4.50.2"
+    "@rollup/rollup-linux-s390x-gnu" "4.50.2"
+    "@rollup/rollup-linux-x64-gnu" "4.50.2"
+    "@rollup/rollup-linux-x64-musl" "4.50.2"
+    "@rollup/rollup-openharmony-arm64" "4.50.2"
+    "@rollup/rollup-win32-arm64-msvc" "4.50.2"
+    "@rollup/rollup-win32-ia32-msvc" "4.50.2"
+    "@rollup/rollup-win32-x64-msvc" "4.50.2"
     fsevents "~2.3.2"
 
 run-applescript@^7.0.0:
@@ -2321,7 +2325,7 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^5.4.5:
+typescript@^5.4.5, typescript@>=4.9.5:
   version "5.4.5"
 
 undici-types@~5.26.4:
@@ -2369,7 +2373,7 @@ validate-npm-package-license@^3.0.4:
 validate-npm-package-name@^5.0.0:
   version "5.0.1"
 
-vite@^5.2.12:
+"vite@^4.2.0 || ^5.0.0", vite@^5.2.12:
   version "5.2.12"
   dependencies:
     esbuild "^0.20.1"
